@@ -5,4 +5,8 @@
     <string name="text_logar">Logar</string>
     <string name="hint_senha">senha</string>
     <string name="text_cadastro">Fazer cadastro</string>
+    <string name="tv_produto">Nome Produto</string>
+    <string name="tv_preco">R$ 00,00</string>
+    <string name="tv_descricao">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</string>
+
 </resources>

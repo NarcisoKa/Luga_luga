@@ -1,4 +1,4 @@
-package View;
+package com.example.lugaluga.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.lugaluga.MainActivity;
 import com.example.lugaluga.R;
 
 public class LoginActivity extends AppCompatActivity {
