@@ -1,4 +1,4 @@
-package Model;
+package com.example.lugaluga.Model;
 
 public class Produto {
     private String nome;
