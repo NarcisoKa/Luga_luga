@@ -1,6 +1,8 @@
 package com.example.lugaluga.View;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,9 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.lugaluga.Model.Produto;
@@ -27,10 +27,16 @@ private RecyclerView recyclerView;
 
 private AdapterProduto adapterProduto;
 private List<Produto> produtoList = new ArrayList<>();
+
+
+
     @Override
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar) ;
 
             recyclerView = findViewById(R.id.ListaProduto);
 
@@ -73,7 +79,7 @@ public void  CriarListaProdutos(){
                 200.00,
                 "Iphone 13 64gb",
                 10,
-                "Disponível");
+                "Indisponível");
 
     produtoList.add(produto);
     produto = new Produto(
@@ -105,7 +111,7 @@ public void  CriarListaProdutos(){
             400.00,
             "Apple Ipad mini-64GB",
             98,
-            "Disponível");
+            "Indsponível");
 
     produtoList.add(produto);
     produto = new Produto(
@@ -137,7 +143,7 @@ public void  CriarListaProdutos(){
             700.00,
             "Smart TV 75” UHD 4K LED Samsung 75CU7700",
             100,
-            "Disponível");
+            "Indisponível");
 
     produtoList.add(produto);
     produto = new Produto(
