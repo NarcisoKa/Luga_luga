@@ -21,6 +21,9 @@ public class Usuario implements Parcelable{
     private String email;
     private String senha;
 
+    public Usuario() {
+    }
+
     protected Usuario(Parcel in) {
         nome = in.readString();
         cpf = in.readString();
